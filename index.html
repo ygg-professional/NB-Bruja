@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Panel SVG</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* color de fondo opcional */
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+    height: 100vh;           /* altura total de la pantalla */
+  }
+
+  svg {
+    border: 1px solid black;
+    background-color: white;
+  }
+</style>
+</head>
+<body>
+
+<svg width="350" height="440" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 440">
+
+  <!-- Líneas principales (punta gorrito) -->
+  <line x1="60" y1="120" x2="120" y2="10" stroke="black"/>
+  <line x1="120" y1="10" x2="160" y2="40" stroke="black"/>
+  <line x1="160" y1="40" x2="140" y2="40" stroke="black"/>
+  <line x1="140" y1="40" x2="180" y2="120" stroke="black"/>
+  <!-- Polígono PuntosX1, PuntosY1 (color gorrito morado)--> 
+  <polygon points="60,120 120,10 160,40 140,40 180,120" fill="rgb(158,75,212)" stroke="black"/>
+
+<!-- Más líneas según el código original (hebilla gorrito) -->
+  <line x1="80" y1="80" x2="100" y2="80" stroke="black"/>
+  <line x1="140" y1="80" x2="160" y2="80" stroke="black"/>
+  <line x1="70" y1="100" x2="100" y2="100" stroke="black"/>
+  <line x1="140" y1="100" x2="170" y2="100" stroke="black"/>
+  <line x1="100" y1="70" x2="140" y2="70" stroke="black"/>
+  <line x1="140" y1="70" x2="140" y2="110" stroke="black"/>
+  <line x1="140" y1="110" x2="100" y2="110" stroke="black"/>
+  <line x1="100" y1="110" x2="100" y2="70" stroke="black"/>
+  <line x1="110" y1="80" x2="130" y2="80" stroke="black"/>
+  <line x1="130" y1="80" x2="130" y2="100" stroke="black"/>
+  <line x1="130" y1="100" x2="110" y2="100" stroke="black"/>
+  <line x1="110" y1="100" x2="110" y2="80" stroke="black"/>
+  <!-- Polígono PuntosX2, PuntosY2 (cinta gorrito negro)-->
+  <polygon points="80,80 160,80 170,100 70,100" fill="black" stroke="black"/>
+  <!-- Polígono PuntosX3, PuntosY3 (Hebilla gorrito)-->
+  <polygon points="100,70 140,70 140,110 100,110" fill="rgb(253,247,51)" stroke="black"/>
+  <!-- Polígono PuntosX4, PuntosY4 (cosita Hebilla gorrito)-->
+  <polygon points="110,80 130,80 130,100 110,100" fill="black" stroke="black"/>
+
+ <!-- Líneas adicionales (borde gorrito) -->
+  <line x1="10" y1="120" x2="230" y2="120" stroke="black"/>
+  <line x1="230" y1="120" x2="230" y2="130" stroke="black"/>
+  <line x1="230" y1="130" x2="10" y2="130" stroke="black"/>
+  <line x1="10" y1="130" x2="10" y2="120" stroke="black"/>
+  <!-- Rectángulo PuntosX5, PuntosY5 (borde gorrito morado)-->
+  <polygon points="10,120 230,120 230,130 10,130" fill="rgb(158,75,212)" stroke="black"/>
+
+  <!-- Líneas adicionales (cabello izq) -->
+  <line x1="60" y1="130" x2="0" y2="180" stroke="black"/>
+  <line x1="0" y1="180" x2="10" y2="190" stroke="black"/>
+  <line x1="10" y1="190" x2="40" y2="160" stroke="black"/>
+  <line x1="40" y1="160" x2="20" y2="190" stroke="black"/>
+  <line x1="20" y1="190" x2="30" y2="200" stroke="black"/>
+  <line x1="30" y1="200" x2="50" y2="170" stroke="black"/>
+  <line x1="50" y1="170" x2="40" y2="210" stroke="black"/>
+  <line x1="40" y1="210" x2="50" y2="220" stroke="black"/>
+  <line x1="50" y1="220" x2="80" y2="130" stroke="black"/>
+  <!-- Polígono PuntosX6, PuntosY6 (color negro cabello izq)-->
+  <polygon points="60,130 0,180 10,190 40,160 20,190 30,200 50,170 40,210 50,220 80,130" fill="black"/>
+
+  <!-- Polígono PuntosX7, PuntosY7 (color y lineas negro cabello der)-->
+  <polygon points="160,130 190,220 200,210 190,170 210,200 220,190 200,160 230,190 240,180 180,130" fill="black"/>
+
+  <!-- Polígono PuntosX8, PuntosY8 (color y lineas verde cabeza )-->
+  <polygon points="80,130 60,190 60,210 90,240 150,240 180,210 180,190 160,130" fill="rgb(136,218,79)" stroke="black"/>
+
+  <!-- Nariz y boca -->
+  <line x1="160" y1="170" x2="70" y2="170" stroke="black"/>
+  <line x1="70" y1="170" x2="70" y2="190" stroke="black"/>
+  <line x1="70" y1="190" x2="130" y2="190" stroke="black"/>
+  <line x1="90" y1="200" x2="90" y2="210" stroke="black"/>
+  <line x1="90" y1="210" x2="100" y2="220" stroke="black"/>
+  <line x1="100" y1="220" x2="140" y2="220" stroke="black"/>
+  <line x1="140" y1="220" x2="150" y2="210" stroke="black"/>
+  <line x1="150" y1="210" x2="150" y2="200" stroke="black"/>
+
+  <!-- Polígono PuntosX9, PuntosY9 (color y lineas ojo blaco izq)-->
+  <polygon points="80,140 110,140 110,170 80,170" fill="rgb(254,254,254)" stroke="black"/>
+
+  <!-- Polígono PuntosX10, PuntosY10 (color y lineas negro ojo izq)-->
+  <polygon points="90,150 110,150 110,170 90,170" fill="black" stroke="black"/>
+
+  <!-- Polígono PuntosX11, PuntosY11 (color y lineas ojo blaco der)-->
+  <polygon points="130,140 160,140 160,170 130,170" fill="rgb(254,254,254)" stroke="black"/>
+
+  <!-- Polígono PuntosX12, PuntosY12 (color y lineas negro ojo der)-->
+  <polygon points="130,150 150,150 150,170 130,170" fill="black" stroke="black"/>
+
+  <!-- Polígono PuntosX13, PuntosY13 (color y lineas morado vestido)-->
+  <polygon points="150,240 180,320 180,330 60,330 60,320 90,240" fill="rgb(158,75,212)" stroke="black"/>
+
+  <!-- Polígono PuntosX14, PuntosY14 (color y lineas morado manga izq)-->
+  <polygon points="90,240 30,300 40,310 80,270" fill="rgb(158,75,212)" stroke="black"/>
+
+  <!-- Polígono PuntosX15, PuntosY15 (color y lineas verde mano izq)-->
+  <polygon points="30,300 20,310 20,320 40,320 40,310" fill="rgb(136,218,79)" stroke="black"/>
+
+  <!-- Polígono PuntosX16, PuntosY16 (color y lineas cafe manga der)-->
+  <polygon points="60,320 10,320 10,330 60,330" fill="rgb(183,134,89)" stroke="black"/>
+
+  <!-- Polígono PuntosX18, PuntosY18 (color y lineas verde mano der)-->
+  <polygon points="210,230 210,210 220,210 220,220 230,210 240,230 220,240" fill="rgb(136,218,79)" stroke="black"/>
+
+  <!-- Polígono PuntosX17, PuntosY17 (color y lineas morado escoba 1)-->
+  <polygon points="150,240 210,230 220,240 160,270" fill="rgb(158,75,212)" stroke="black"/>
+
+  <!-- Polígono PuntosX19, PuntosY19 (color y lineas cafe escoba 2)-->
+  <polygon points="180,320 230,320 230,330 180,330" fill="rgb(183,134,89)" stroke="black"/>
+
+  <!-- Polígono PuntosX20, PuntosY20 (color y lineas amarillo escoba 3)-->
+  <polygon points="230,320 240,290 330,290 330,360 240,360 230,330" fill="rgb(251,207,51)" stroke="black"/>
+
+  <!-- Polígono PuntosX21, PuntosY21 (color y lineas morado pierna izq)-->
+  <polygon points="90,330 110,370 130,370 130,360 120,360 110,330" fill="rgb(158,75,212)" stroke="black"/>
+
+  <!-- Polígono PuntosX22, PuntosY22 (color y lineas amarillo pierna izq)-->
+  <polygon points="130,360 130,370 140,370 140,360" fill="rgb(253,247,52)" stroke="black"/>
+
+  <!-- Polígono PuntosX23, PuntosY23 (color y lineas negro pie izq)-->
+  <polygon points="140,360 140,370 150,370 160,390 160,360" fill="black" stroke="black"/>
+
+  <!-- Polígono PuntosX24, PuntosY24 (color y lineas morado pierna der)-->
+  <polygon points="130,330 150,360 170,360 170,350 160,350 150,330" fill="rgb(158,75,212)" stroke="black"/>
+
+  <!-- Polígono PuntosX25, PuntosY25 (color y lineas amarillo pierna der)-->
+  <polygon points="170,350 170,360 180,360 180,350" fill="rgb(253,247,52)" stroke="black"/>
+
+  <!-- Polígono PuntosX26, PuntosY26 (color y lineas negro pie der)-->
+  <polygon points="180,350 180,360 190,360 200,380 200,350" fill="black" stroke="black"/>
+
+  <!-- Polígono PuntosX27, PuntosY27 (color y lineas amarillo luna)-->
+  <polygon points="250,10 270,20 280,30 280,70 270,90 250,100 280,100 300,90 310,70 310,40 300,20 280,10" fill="rgb(254,247,52)" stroke="black"/>
+
+</svg>
+
+</body>
+</html>
